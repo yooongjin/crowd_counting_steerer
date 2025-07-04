@@ -2,20 +2,14 @@
 
 ## preparation 
 
-- **Clone this repo** in the directory (```root/```):
-
-
-```bash
-cd $root
-git clone https://github.com/yooongjin/crowd_counting_steerer.git
-```
 - **Install dependencies.** We use python 3.9 and pytorch >= 1.12.0 : http://pytorch.org.
 
 ```bash
+git clone https://github.com/yooongjin/crowd_counting_steerer.git
 conda create -n STEERER python=3.9 -y
 conda activate STEERER
 conda install pytorch==1.12.0 torchvision==0.13.0 cudatoolkit=11.3 -c pytorch
-cd ${STEERER}
+cd STEERER
 pip install -r requirements.txt
 pip install decord
 ```
